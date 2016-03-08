@@ -10,41 +10,27 @@
         android:layout_weight="1">
 
         <LinearLayout
+
             android:id="@+id/llHorizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal" />
     </HorizontalScrollView>
 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical">
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewPager"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <developer.com.assignment_1.widgets.CirclePageIndicator
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/pager_header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:paddingBottom="4dp"
-            android:paddingTop="4dp"
-            app:fillColor="@color/colorAccent" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <TextView
             android:id="@+id/dummyTxt1"
@@ -52,7 +38,6 @@
             android:layout_height="0dp"
             android:layout_weight="1"
 
-            android:padding="5dp"
             android:text="TextView1" />
 
         <TextView
@@ -62,7 +47,6 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
 
-            android:padding="5dp"
             android:text="TextView2" />
 
         <TextView
@@ -72,7 +56,6 @@
             android:layout_weight="1"
             android:gravity="right"
 
-            android:padding="5dp"
             android:text="TextView3" />
 
     </LinearLayout>
@@ -83,7 +66,9 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="clicked text" />
+        android:text="clicked text"
+
+       />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -101,8 +86,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:text="Color2"
             android:textAllCaps="false" />
 
