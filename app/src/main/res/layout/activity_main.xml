@@ -28,9 +28,8 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <developer.com.assignment_1.widgets.CirclePageIndicator
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/pager_header"
+        <developer.com.assignment_1.widgets.CirclePageIndicator xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pageIndicator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
@@ -86,6 +85,7 @@
         android:text="clicked text" />
 
     <LinearLayout
+        android:id="@+id/llButtons"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -93,23 +93,26 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnRed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Color1"
+            android:text="@string/btnRed"
             android:textAllCaps="false" />
 
         <Button
+            android:id="@+id/btnBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="Color2"
+            android:text="@string/btnBlue"
             android:textAllCaps="false" />
 
         <Button
+            android:id="@+id/btnGreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Color3"
+            android:text="@string/btnGreen"
             android:textAllCaps="false" />
 
     </LinearLayout>

@@ -17,20 +17,37 @@
             android:orientation="horizontal" />
     </HorizontalScrollView>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <developer.com.assignment_1.widgets.CirclePageIndicator xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pageIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            app:fillColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/dummyTxt1"
@@ -64,13 +81,14 @@
         android:id="@+id/txtItem"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight=".5"
         android:gravity="center"
         android:text="clicked text"
 
-       />
+        />
 
     <LinearLayout
+        android:id="@+id/llButtons"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -78,23 +96,26 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnRed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Color1"
+            android:text="@string/btnRed"
             android:textAllCaps="false" />
 
         <Button
+            android:id="@+id/btnBlue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:text="Color2"
+            android:text="@string/btnBlue"
             android:textAllCaps="false" />
 
         <Button
+            android:id="@+id/btnGreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Color3"
+            android:text="@string/btnGreen"
             android:textAllCaps="false" />
 
     </LinearLayout>
